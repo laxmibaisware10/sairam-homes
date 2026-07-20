@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, CheckCircle2, ChevronRight, MapPin, Phone, Sparkles, TrendingUp } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
-import { getProject, projects } from "@/lib/projects";
+import { getProject, projects, type Project } from "@/lib/projects";
 import { site } from "@/lib/site";
 
 export const Route = createFileRoute("/projects/$slug")({
