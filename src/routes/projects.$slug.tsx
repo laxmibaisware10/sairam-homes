@@ -61,7 +61,7 @@ function ProjectNotFound() {
 }
 
 function ProjectDetail() {
-  const { project } = Route.useLoaderData();
+  const { project } = Route.useLoaderData() as { project: Project };
   const related = projects.filter((p) => p.slug !== project.slug && p.type === project.type).slice(0, 3);
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(project.mapQuery)}&z=14&output=embed`;
 
