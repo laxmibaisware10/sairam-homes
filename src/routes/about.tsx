@@ -1,11 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Award, ChevronRight, Compass, Heart, Milestone, ShieldCheck, Target } from "lucide-react";
 import { SiteLayout } from "@/components/SiteLayout";
-import aboutImg from "@/assets/about.jpg.asset.json";
-import founderImg from "@/assets/founder.jpg.asset.json";
+import aboutImg from "@/assets/about-team-premium.jpg";
+import founderImg from "@/assets/founder-premium.jpg";
 import { site } from "@/lib/site";
 
 export const Route = createFileRoute("/about")({
+  ssr: false,
   head: () => ({
     meta: [
       { title: "About Us | Sri Sairam Builders & Developers — Nagpur since 2008" },
@@ -142,10 +143,12 @@ function AboutPage() {
         </div>
         <div className="grid gap-5">
           <img
-            src={aboutImg.url}
-            alt="The Sri Sairam Builders team"
+            src={aboutImg}
+            alt="Sri Sairam Builders architects, engineers and project team at a residential township"
             loading="lazy"
             className="rounded-3xl shadow-elegant object-cover w-full aspect-[4/3]"
+            width={1400}
+            height={1000}
           />
           <div className="grid grid-cols-3 gap-3">
             {[
@@ -198,10 +201,12 @@ function AboutPage() {
         <div className="relative">
           <div className="absolute -inset-4 rounded-3xl gradient-gold opacity-15 blur-2xl" />
           <img
-            src={founderImg.url}
+            src={founderImg}
             alt="Founder of Sri Sairam Builders & Developers"
             loading="lazy"
             className="relative rounded-3xl shadow-elegant object-cover w-full aspect-[4/5] max-w-md mx-auto"
+            width={1000}
+            height={1250}
           />
         </div>
         <div>

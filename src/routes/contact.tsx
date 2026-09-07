@@ -5,6 +5,7 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { site } from "@/lib/site";
 
 export const Route = createFileRoute("/contact")({
+  ssr: false,
   head: () => ({
     meta: [
       { title: "Contact Us | Sri Sairam Builders & Developers, Nagpur" },

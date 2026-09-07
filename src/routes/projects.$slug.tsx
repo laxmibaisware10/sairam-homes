@@ -5,6 +5,7 @@ import { getProject, projects, type Project } from "@/lib/projects";
 import { site } from "@/lib/site";
 
 export const Route = createFileRoute("/projects/$slug")({
+  ssr: false,
   loader: ({ params }) => {
     const project = getProject(params.slug);
     if (!project) throw notFound();

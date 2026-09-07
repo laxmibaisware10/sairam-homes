@@ -4,6 +4,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { plotProjects, flatProjects } from "@/lib/projects";
 
 export const Route = createFileRoute("/projects")({
+  ssr: false,
   head: () => ({
     meta: [
       { title: "Our Projects | Sri Sairam Builders & Developers, Nagpur" },
