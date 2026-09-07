@@ -58,7 +58,7 @@ function Hero() {
   return (
     <section className="relative -mt-20 h-[92vh] min-h-[640px] w-full overflow-hidden">
       <img
-        src={heroImg.url}
+        src={heroImg}
         alt="Aerial view of a premium Sri Sairam plotted development at golden hour"
         className="absolute inset-0 h-full w-full object-cover animate-slow-zoom"
         fetchPriority="high"
