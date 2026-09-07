@@ -6,6 +6,10 @@ import heightsImg from "@/assets/heights.jpg.asset.json";
 import residencyImg from "@/assets/residency.jpg.asset.json";
 import greensImg from "@/assets/greens.jpg.asset.json";
 import enclaveImg from "@/assets/enclave.jpg.asset.json";
+import apartmentsIndian1 from "@/assets/apartments-indian-1.jpg";
+import apartmentsIndian2 from "@/assets/apartments-indian-2.jpg";
+import apartmentsIndian3 from "@/assets/apartments-indian-3.jpg";
+import apartmentsIndian4 from "@/assets/apartments-indian-4.jpg";
 
 export type Project = {
   slug: string;
@@ -269,7 +273,7 @@ export const projects: Project[] = [
     location: "Wardha Road, Nagpur",
     fullLocation: "Wardha Road, Nagpur, Maharashtra",
     mapQuery: "Wardha Road, Nagpur",
-    image: heightsImg.url,
+    image: apartmentsIndian1,
     highlights: [
       "22-storey premium residential tower",
       "2, 3 & 4 BHK sky homes",
@@ -326,7 +330,7 @@ export const projects: Project[] = [
     location: "Manish Nagar, Nagpur",
     fullLocation: "Manish Nagar, Nagpur, Maharashtra",
     mapQuery: "Manish Nagar, Nagpur",
-    image: residencyImg.url,
+    image: apartmentsIndian2,
     highlights: [
       "Twin 18-storey towers",
       "2 & 3 BHK homes with resort-style courtyard",
@@ -383,7 +387,7 @@ export const projects: Project[] = [
     location: "Besa, Nagpur",
     fullLocation: "Besa, Nagpur, Maharashtra",
     mapQuery: "Besa, Nagpur",
-    image: greensImg.url,
+    image: apartmentsIndian3,
     highlights: [
       "Boutique G+3 low-rise, only 24 exclusive homes",
       "2 & 3 BHK garden apartments",
@@ -440,7 +444,7 @@ export const projects: Project[] = [
     location: "Civil Lines, Nagpur",
     fullLocation: "Civil Lines, Nagpur, Maharashtra",
     mapQuery: "Civil Lines, Nagpur",
-    image: enclaveImg.url,
+    image: apartmentsIndian4,
     highlights: [
       "Mediterranean-themed boutique tower",
       "3 & 4 BHK signature residences",

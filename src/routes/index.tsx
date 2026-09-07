@@ -16,10 +16,11 @@ import { SiteLayout } from "@/components/SiteLayout";
 import { ProjectCard } from "@/components/ProjectCard";
 import { plotProjects, flatProjects } from "@/lib/projects";
 import { site } from "@/lib/site";
-import heroImg from "@/assets/hero.jpg.asset.json";
-import aboutImg from "@/assets/about.jpg.asset.json";
+import heroImg from "@/assets/hero-premium.jpg";
+import aboutImg from "@/assets/about-team-premium.jpg";
 
 export const Route = createFileRoute("/")({
+  ssr: false,
   head: () => ({
     meta: [
       { title: "Sri Sairam Builders & Developers | Premium Real Estate in Nagpur" },
@@ -61,6 +62,8 @@ function Hero() {
         alt="Aerial view of a premium Sri Sairam plotted development at golden hour"
         className="absolute inset-0 h-full w-full object-cover animate-slow-zoom"
         fetchPriority="high"
+        width={1600}
+        height={1000}
       />
       <div className="absolute inset-0 hero-mask" />
       <div className="absolute inset-0 bg-gradient-to-r from-brand/70 via-brand/40 to-transparent" />
@@ -181,10 +184,12 @@ function Intro() {
       <div className="relative">
         <div className="absolute -inset-4 rounded-3xl gradient-gold opacity-20 blur-2xl" />
         <img
-          src={aboutImg.url}
+          src={aboutImg}
           alt="Sri Sairam Builders team reviewing project blueprints"
           loading="lazy"
           className="relative rounded-3xl shadow-elegant object-cover w-full aspect-[4/3]"
+          width={1400}
+          height={1000}
         />
         <div className="absolute -bottom-6 -left-6 rounded-2xl bg-white p-5 shadow-elegant border border-border max-w-[220px] hidden md:block">
           <div className="font-display text-3xl font-bold text-brand">Since 2008</div>
