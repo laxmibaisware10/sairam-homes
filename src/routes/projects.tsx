@@ -18,6 +18,8 @@ export const Route = createFileRoute("/projects")({
         property: "og:description",
         content: "Plots and apartments across Nagpur's most promising locations.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: ProjectsPage,

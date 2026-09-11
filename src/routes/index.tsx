@@ -34,6 +34,8 @@ export const Route = createFileRoute("/")({
         property: "og:description",
         content: "Nagpur's most trusted real estate legacy — plots and apartments since 2008.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: HomePage,
