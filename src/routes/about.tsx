@@ -20,6 +20,8 @@ export const Route = createFileRoute("/about")({
         property: "og:description",
         content: "Seventeen years of Nagpur real estate, built on honest work and clear titles.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: AboutPage,

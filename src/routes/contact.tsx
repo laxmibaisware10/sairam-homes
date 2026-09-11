@@ -19,6 +19,8 @@ export const Route = createFileRoute("/contact")({
         property: "og:description",
         content: "Nagpur head office, phone, WhatsApp and email — we reply within minutes.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: ContactPage,
